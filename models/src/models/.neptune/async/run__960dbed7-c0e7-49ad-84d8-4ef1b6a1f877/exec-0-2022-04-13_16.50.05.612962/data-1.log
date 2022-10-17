@@ -1,0 +1,78 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "KW60717"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "train.py"}, "version": 7}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["/home/resifis/Desktop/kaustcode/Packages/models/src/models/train.py"], "reset": "False"}, "version": 8}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 9}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 10}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 251.55138397216797, "unit": "GB"}, "version": 11}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 12}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "gpu_0"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 13}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "gpu_0"]}, "version": 14}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "gpu_1"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 15}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "gpu_1"]}, "version": 16}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "gpu_memory_0"], "min": 0.0, "max": 23.69952392578125, "unit": "GB"}, "version": 17}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "gpu_memory_0"]}, "version": 18}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "gpu_memory_1"], "min": 0.0, "max": 23.69952392578125, "unit": "GB"}, "version": 19}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "gpu_memory_1"]}, "version": 20}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": ".........EPOCH 0........", "step": null, "ts": 1649857806.1501536}]}, "version": 21}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1649857806.1503203}]}, "version": 22}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|                                                            | 0/500 [00:00<?, ?it/s]", "step": null, "ts": 1649857806.1538064}]}, "version": 23}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 3.1, "step": null, "ts": 1649857806.1406538}]}, "version": 24}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 7.9938201904296875, "step": null, "ts": 1649857806.1406538}]}, "version": 25}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu_memory_0"], "values": [{"value": 0.4571533203125, "step": null, "ts": 1649857806.1406538}]}, "version": 26}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu_memory_1"], "values": [{"value": 1.603759765625, "step": null, "ts": 1649857806.1406538}]}, "version": 27}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "torch.Size([4, 512, 2, 26, 36])", "step": null, "ts": 1649857809.215592}]}, "version": 28}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1649857809.216201}]}, "version": 29}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "shape of x", "step": null, "ts": 1649857809.271929}]}, "version": 30}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": " ", "step": null, "ts": 1649857809.2721112}]}, "version": 31}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "torch.Size([4, 512, 4, 52, 72])", "step": null, "ts": 1649857809.2721825}]}, "version": 32}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1649857809.2722638}]}, "version": 33}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "downscalign ", "step": null, "ts": 1649857809.2723203}]}, "version": 34}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": " ", "step": null, "ts": 1649857809.2723851}]}, "version": 35}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "torch.Size([4, 256, 4, 53, 72])", "step": null, "ts": 1649857809.2724445}]}, "version": 36}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1649857809.272496}]}, "version": 37}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "", "step": null, "ts": 1649857809.279539}]}, "version": 38}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|                                                            | 0/500 [00:03<?, ?it/s]", "step": null, "ts": 1649857809.2799144}]}, "version": 39}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1649857809.2800164}]}, "version": 40}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "traceback"], "values": [{"value": "An uncaught exception occurred while run was active on worker KW60717.", "step": null, "ts": 1649857809.2811263}, {"value": "Marking run as failed", "step": null, "ts": 1649857809.2811263}, {"value": "Traceback:", "step": null, "ts": 1649857809.2811263}, {"value": "  File \"/home/resifis/Desktop/kaustcode/Packages/models/src/models/train.py\", line 99, in <module>\n    job.fit(WRFData,WRFData)\n", "step": null, "ts": 1649857809.2811263}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/models/forecastors/utils/simple_engine.py\", line 164, in fit\n    tr_loss = self.train_fn(self.train_config.model,train_data_loader,sparse)\n", "step": null, "ts": 1649857809.2811263}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/models/forecastors/utils/simple_engine.py\", line 88, in train_fn\n    pred_target = model(data)\n", "step": null, "ts": 1649857809.2811263}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/nn/modules/module.py\", line 1110, in _call_impl\n    return forward_call(*input, **kwargs)\n", "step": null, "ts": 1649857809.2811263}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/models/forecastors/Conv3DUNet/unet3d.py\", line 140, in forward\n    out = self.decoder(enc, downsampling_features)\n", "step": null, "ts": 1649857809.2811263}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/nn/modules/module.py\", line 1110, in _call_impl\n    return forward_call(*input, **kwargs)\n", "step": null, "ts": 1649857809.2811263}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/models/forecastors/Conv3DUNet/unet3d.py\", line 120, in forward\n    x = torch.cat((down_sampling_features[int(k[-1])], x), dim=1)\n", "step": null, "ts": 1649857809.2811263}]}, "version": 41}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "traceback"], "values": [{"value": "Sizes of tensors must match except in dimension 1. Expected size 53 but got size 52 for tensor number 1 in the list.", "step": null, "ts": 1649857809.2811263}]}, "version": 42}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": true}, "version": 43}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Traceback (most recent call last):\n", "step": null, "ts": 1649857809.2814963}]}, "version": 44}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/Desktop/kaustcode/Packages/models/src/models/train.py\", line 99, in <module>\n", "step": null, "ts": 1649857809.281591}]}, "version": 45}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1649857809.2817419}]}, "version": 46}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "job.fit(WRFData,WRFData)", "step": null, "ts": 1649857809.281801}]}, "version": 47}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1649857809.2818553}]}, "version": 48}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/models/forecastors/utils/simple_engine.py\", line 164, in fit\n", "step": null, "ts": 1649857809.281911}]}, "version": 49}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1649857809.2820642}]}, "version": 50}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "tr_loss = self.train_fn(self.train_config.model,train_data_loader,sparse)", "step": null, "ts": 1649857809.282121}]}, "version": 51}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1649857809.2821743}]}, "version": 52}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/models/forecastors/utils/simple_engine.py\", line 88, in train_fn\n", "step": null, "ts": 1649857809.2822278}]}, "version": 53}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1649857809.2823281}]}, "version": 54}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "pred_target = model(data)", "step": null, "ts": 1649857809.282379}]}, "version": 55}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1649857809.2824292}]}, "version": 56}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/nn/modules/module.py\", line 1110, in _call_impl\n", "step": null, "ts": 1649857809.2824817}]}, "version": 57}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1649857809.2826939}]}, "version": 58}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "return forward_call(*input, **kwargs)", "step": null, "ts": 1649857809.282752}]}, "version": 59}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1649857809.2828045}]}, "version": 60}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/models/forecastors/Conv3DUNet/unet3d.py\", line 140, in forward\n", "step": null, "ts": 1649857809.2828581}]}, "version": 61}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1649857809.2829735}]}, "version": 62}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "out = self.decoder(enc, downsampling_features)", "step": null, "ts": 1649857809.2830274}]}, "version": 63}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1649857809.2830784}]}, "version": 64}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/nn/modules/module.py\", line 1110, in _call_impl\n", "step": null, "ts": 1649857809.2831304}]}, "version": 65}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1649857809.2833292}]}, "version": 66}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "return forward_call(*input, **kwargs)", "step": null, "ts": 1649857809.283383}]}, "version": 67}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1649857809.283435}]}, "version": 68}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/models/forecastors/Conv3DUNet/unet3d.py\", line 120, in forward\n", "step": null, "ts": 1649857809.2834883}]}, "version": 69}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1649857809.2835822}]}, "version": 70}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "x = torch.cat((down_sampling_features[int(k[-1])], x), dim=1)", "step": null, "ts": 1649857809.2836473}]}, "version": 71}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1649857809.2836976}]}, "version": 72}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "RuntimeError", "step": null, "ts": 1649857809.2837548}]}, "version": 73}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": ": ", "step": null, "ts": 1649857809.2838}]}, "version": 74}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Sizes of tensors must match except in dimension 1. Expected size 53 but got size 52 for tensor number 1 in the list.", "step": null, "ts": 1649857809.283843}]}, "version": 75}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1649857809.283892}]}, "version": 76}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "", "step": null, "ts": 1649857809.284381}]}, "version": 77}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1649857809.2845287}]}, "version": 78}

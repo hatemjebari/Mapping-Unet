@@ -1,0 +1,80 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "KW60717"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "train.py"}, "version": 7}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["/home/resifis/Desktop/kaustcode/Packages/models/src/models/train.py"], "reset": "False"}, "version": 8}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 9}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 10}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 251.55138778686523, "unit": "GB"}, "version": 11}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 12}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "gpu_0"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 13}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "gpu_0"]}, "version": 14}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "gpu_1"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 15}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "gpu_1"]}, "version": 16}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "gpu_memory_0"], "min": 0.0, "max": 23.69952392578125, "unit": "GB"}, "version": 17}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "gpu_memory_0"]}, "version": 18}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "gpu_memory_1"], "min": 0.0, "max": 23.69952392578125, "unit": "GB"}, "version": 19}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "gpu_memory_1"]}, "version": 20}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": ".........EPOCH 0........", "step": null, "ts": 1648936034.486938}]}, "version": 21}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1648936034.4880342}]}, "version": 22}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 2.2, "step": null, "ts": 1648936034.4778645}]}, "version": 23}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 44.254520416259766, "step": null, "ts": 1648936034.4778645}]}, "version": 24}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu_memory_0"], "values": [{"value": 0.6761474609375, "step": null, "ts": 1648936034.4778645}]}, "version": 25}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "gpu_memory_1"], "values": [{"value": 1.853759765625, "step": null, "ts": 1648936034.4778645}]}, "version": 26}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|                                                                                                                                                                                                 | 0/250 [00:00<?, ?it/s]", "step": null, "ts": 1648936034.5093997}]}, "version": 27}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "", "step": null, "ts": 1648936034.509946}]}, "version": 28}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\r  0%|                                                                                                                                                                                                 | 0/250 [00:00<?, ?it/s]", "step": null, "ts": 1648936034.5104153}]}, "version": 29}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1648936034.5106137}]}, "version": 30}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "traceback"], "values": [{"value": "An uncaught exception occurred while run was active on worker KW60717.", "step": null, "ts": 1648936034.5355566}, {"value": "Marking run as failed", "step": null, "ts": 1648936034.5355566}, {"value": "Traceback:", "step": null, "ts": 1648936034.5355566}, {"value": "  File \"/home/resifis/Desktop/kaustcode/Packages/models/src/models/train.py\", line 100, in <module>\n    job.fit(WRFData,WRFData)\n", "step": null, "ts": 1648936034.5355566}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/models/forecastors/utils/engine.py\", line 195, in fit\n    tr_loss = self.train_fn(self.train_config.model,train_data_loader,run,sparse)\n", "step": null, "ts": 1648936034.5355566}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/models/forecastors/utils/engine.py\", line 82, in train_fn\n    for index,train_batch in tqt:\n", "step": null, "ts": 1648936034.5355566}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/tqdm/std.py\", line 1195, in __iter__\n    for obj in iterable:\n", "step": null, "ts": 1648936034.5355566}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py\", line 530, in __next__\n    data = self._next_data()\n", "step": null, "ts": 1648936034.5355566}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py\", line 569, in _next_data\n    index = self._next_index()  # may raise StopIteration\n", "step": null, "ts": 1648936034.5355566}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py\", line 521, in _next_index\n    return next(self._sampler_iter)  # may raise StopIteration\n", "step": null, "ts": 1648936034.5355566}]}, "version": 31}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "traceback"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/utils/data/sampler.py\", line 226, in __iter__\n    for idx in self.sampler:\n", "step": null, "ts": 1648936034.5355566}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/utils/data/sampler.py\", line 108, in __iter__\n    n = len(self.data_source)\n", "step": null, "ts": 1648936034.5355566}, {"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/data_prep/dataset/wrf_data.py\", line 115, in __len__\n    len_ = self.cloud.variables[\"cc\"].shape[0]\n", "step": null, "ts": 1648936034.5355566}, {"value": "'WRFDataset' object has no attribute 'cloud'", "step": null, "ts": 1648936034.5355566}]}, "version": 32}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": true}, "version": 33}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Traceback (most recent call last):\n", "step": null, "ts": 1648936034.5361814}]}, "version": 34}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/Desktop/kaustcode/Packages/models/src/models/train.py\", line 100, in <module>\n", "step": null, "ts": 1648936034.5363746}]}, "version": 35}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1648936034.5366933}]}, "version": 36}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "job.fit(WRFData,WRFData)", "step": null, "ts": 1648936034.5368614}]}, "version": 37}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1648936034.5370264}]}, "version": 38}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/models/forecastors/utils/engine.py\", line 195, in fit\n", "step": null, "ts": 1648936034.537192}]}, "version": 39}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1648936034.5375123}]}, "version": 40}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "tr_loss = self.train_fn(self.train_config.model,train_data_loader,run,sparse)", "step": null, "ts": 1648936034.5376716}]}, "version": 41}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1648936034.5378304}]}, "version": 42}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/models/forecastors/utils/engine.py\", line 82, in train_fn\n", "step": null, "ts": 1648936034.537993}]}, "version": 43}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1648936034.5383255}]}, "version": 44}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "for index,train_batch in tqt:", "step": null, "ts": 1648936034.538487}]}, "version": 45}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1648936034.538666}]}, "version": 46}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/tqdm/std.py\", line 1195, in __iter__\n", "step": null, "ts": 1648936034.5388274}]}, "version": 47}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1648936034.539384}]}, "version": 48}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "for obj in iterable:", "step": null, "ts": 1648936034.5395107}]}, "version": 49}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1648936034.5396316}]}, "version": 50}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py\", line 530, in __next__\n", "step": null, "ts": 1648936034.5397532}]}, "version": 51}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1648936034.5400815}]}, "version": 52}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "data = self._next_data()", "step": null, "ts": 1648936034.5402038}]}, "version": 53}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1648936034.540322}]}, "version": 54}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py\", line 569, in _next_data\n", "step": null, "ts": 1648936034.5404427}]}, "version": 55}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1648936034.5407693}]}, "version": 56}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "index = self._next_index()  # may raise StopIteration", "step": null, "ts": 1648936034.5408876}]}, "version": 57}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1648936034.5410054}]}, "version": 58}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py\", line 521, in _next_index\n", "step": null, "ts": 1648936034.5411265}]}, "version": 59}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1648936034.541449}]}, "version": 60}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "return next(self._sampler_iter)  # may raise StopIteration", "step": null, "ts": 1648936034.541567}]}, "version": 61}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1648936034.5416842}]}, "version": 62}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/utils/data/sampler.py\", line 226, in __iter__\n", "step": null, "ts": 1648936034.5418034}]}, "version": 63}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1648936034.542034}]}, "version": 64}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "for idx in self.sampler:", "step": null, "ts": 1648936034.542148}]}, "version": 65}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1648936034.5422628}]}, "version": 66}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/torch/utils/data/sampler.py\", line 108, in __iter__\n", "step": null, "ts": 1648936034.54238}]}, "version": 67}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1648936034.5425847}]}, "version": 68}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "n = len(self.data_source)", "step": null, "ts": 1648936034.542708}]}, "version": 69}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1648936034.5428245}]}, "version": 70}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/home/resifis/anaconda3/envs/kaustenv/lib/python3.9/site-packages/data_prep/dataset/wrf_data.py\", line 115, in __len__\n", "step": null, "ts": 1648936034.5429435}]}, "version": 71}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1648936034.5431447}]}, "version": 72}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "len_ = self.cloud.variables[\"cc\"].shape[0]", "step": null, "ts": 1648936034.543258}]}, "version": 73}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1648936034.5433729}]}, "version": 74}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "AttributeError", "step": null, "ts": 1648936034.5434847}]}, "version": 75}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": ": ", "step": null, "ts": 1648936034.5435898}]}, "version": 76}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "'WRFDataset' object has no attribute 'cloud'", "step": null, "ts": 1648936034.543693}]}, "version": 77}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1648936034.5438051}]}, "version": 78}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "", "step": null, "ts": 1648936034.5441055}]}, "version": 79}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1648936034.5442863}]}, "version": 80}
